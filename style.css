@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap');
+
+
+#navbar {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0%;
+    z-index: 1;
+    backdrop-filter: blur(8px);
+}
+
+#navbar #isim {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 18%;
+    color: white;
+}
+
+#navbar #contact {
+    position: fixed;
+    text-align: center;
+    left: 75%;
+    top: 30%;
+    width: 100px;
+    height: 2.5rem;
+  /*  background-color: #1e211e;*/
+    background-color: rgb(26, 26, 28);
+    border-radius: 20px;
+    border: none;
+    transition: box-shadow 1s;
+}
+
+
+
+#navbar #contact p {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.1rem;
+    color: white;
+    text-align: center;
+    margin-top: 8px;
+}
+
+#navbar #contact:hover {
+    box-shadow: 0 0 3px #515151;
+    cursor: pointer;
+    color: rgb(206, 203, 203);
+}
+
+#panel {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background: rgb(22, 22, 24);
+    background: linear-gradient(0deg, rgba(22, 22, 24, 1) 52%, rgba(23, 22, 22, 1) 83%);
+    width: 100%;
+    height: 31.25rem;
+}
+
+#panel #isim {
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 3rem;
+    position: absolute;
+    left: 18%;
+    top: 22%;
+}
+
+#panel #developer {
+    color: rgb(163, 188, 204);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 18%;
+    top: 40%;
+}
+
+#panel #desc {
+    color: grey;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 18%;
+    top: 50%;
+}
+
+#panel #contact {
+    position: absolute;
+    top: 70%;
+    left: 18%;
+    width: 7.5rem;
+    height: 2.5rem;
+    background-color: #1e211e;
+    border-radius: 20px;
+    border: none;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.1rem;
+    color: white;
+    transition: box-shadow 1s;
+}
+
+
+#panel #github {
+    position: absolute;
+    top: 71%;
+    left: 27.5%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    transition: box-shadow 1s;
+}
+
+#panel #github:hover {
+    box-shadow: 0 0 3px #515151;
+    cursor: pointer;
+}
+
+
+#panel #contact:hover {
+    box-shadow: 0 0 3px #515151;
+    cursor: pointer;
+    color: rgb(206, 203, 203);
+}
+
+#alt {
+    position: absolute;
+    background-color: rgb(26, 25, 25);
+    width: 100%;
+    height: 37.25rem;
+    top: 79%;
+    left: 0%;
+}
+
+#alt #abouttitle {
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    font-family: 'IBM Plex Mono', monospace;
+    color: rgb(201, 198, 198);
+    font-size: 2rem;
+}
+
+#alt #descalt {
+    position: absolute;
+    left: 18%;
+    top: 35%;
+    color: grey;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.2rem;
+}
+
+#alt #box1 {
+    position: absolute;
+    left: 55%;
+    height: 180px;
+    width: 190px;
+    background-color: rgb(38, 38, 38);
+    top: 20%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#alt #box1 #imagebox1 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 10px;
+    background-color: #bb8d0dd9;
+}
+
+#alt #box1 #imagebox1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    width: 50%;
+}
+
+#alt #box1 #name {
+    position: absolute;
+    left: 10%;
+    top: 45%;
+    color: rgb(201, 198, 198);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5rem;
+}
+
+#alt #box1 #date {
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    color: grey;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.1rem;
+}
+
+#alt #box1::after {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+}
+
+#alt #box1:hover {
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+    cursor: pointer;
+}
+
+#alt #box1:hover::after {
+    opacity: 1;
+}
+
+
+#alt #box2 {
+    position: absolute;
+    left: 72%;
+    height: 180px;
+    width: 190px;
+    background-color: rgb(38, 38, 38);
+    top: 20%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#alt #box2::after {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+}
+
+#alt #box2:hover {
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+    cursor: pointer;
+}
+
+#alt #box2:hover::after {
+    opacity: 1;
+}
+
+#alt #box2 #imagebox2 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 10px;
+    background-color: #396b2a;
+}
+
+#alt #box2 #imagebox2 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    width: 50%;
+}
+
+#alt #box2 #name {
+    position: absolute;
+    left: 10%;
+    top: 45%;
+    color: rgb(201, 198, 198);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5rem;
+}
+
+#alt #box2 #date {
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    color: grey;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.1rem;
+}
+
+
+
+#alt #box3 {
+    position: absolute;
+    left: 55%;
+    height: 180px;
+    width: 190px;
+    background-color: rgb(38, 38, 38);
+    top: 55%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#alt #box3::after {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+}
+
+#alt #box3:hover {
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+    cursor: pointer;
+}
+
+#alt #box3:hover::after {
+    opacity: 1;
+}
+
+#alt #box3 #imagebox3 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 10px;
+    background-color: #1d0341;
+}
+
+#alt #box3 #imagebox3 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    width: 50%;
+}
+
+#alt #box3 #name {
+    position: absolute;
+    left: 10%;
+    top: 45%;
+    color: rgb(201, 198, 198);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5rem;
+}
+
+#alt #box3 #date {
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    color: grey;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.1rem;
+}
+
+
+
+#alt #box4 {
+    position: absolute;
+    left: 72%;
+    height: 180px;
+    width: 190px;
+    background-color: rgb(38, 38, 38);
+    top: 55%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#alt #box4::after {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    opacity: 0;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    z-index: -1;
+}
+
+#alt #box4:hover {
+    -webkit-transform: scale(1.25, 1.25);
+    transform: scale(1.25, 1.25);
+    cursor: pointer;
+}
+
+#alt #box4:hover::after {
+    opacity: 1;
+}
+
+#alt #box4 #imagebox4 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 4.375rem;
+    height: 4.375rem;
+    border-radius: 10px;
+    background-color: #3606a9;
+}
+
+#alt #box4 #imagebox4 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    width: 50%;
+}
+
+#alt #box4 #name {
+    position: absolute;
+    left: 10%;
+    top: 45%;
+    color: rgb(201, 198, 198);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.5rem;
+}
+
+#alt #box4 #date {
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    color: grey;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.1rem;
+}
+
+#works {
+    width: 100%;
+    height: 700px;
+    background: rgb(22, 22, 24);
+    background: linear-gradient(0deg, rgba(22, 22, 24, 1) 52%, rgba(23, 22, 22, 1) 83%);
+    position: absolute;
+    top: 100%;
+}
+
+#works #handler {
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#works #handler #worktitle {
+    font-size: 2rem;
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(31, 30, 30);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(221, 221, 221);
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(157, 150, 150);
+}
+
+#works #codare {
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    width: 65%;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: background 0.1s ease-out;
+}
+
+#works #codare:hover {
+    background-color: #1d1c1c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+#works #codare #name {
+    position: absolute;
+    left: 27%;
+    top: 15%;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#works #codare #rutbe {
+    position: absolute;
+    left: 27%;
+    top: 35%;
+    color: rgb(199, 193, 193);
+    font-size: 1.1rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#works #codare #desc {
+    position: absolute;
+    left: 27%;
+    top: 50%;
+    color: rgb(199, 193, 193);
+    font-size: 1.1rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#works #codare #resimhandler {
+    position: absolute;
+    left: 2%;
+    width: 200px;
+    height: 120px;
+    top: 22%;
+    background-color: rgb(21, 20, 20);
+    border-radius: 5px;
+}
+
+#works #codare #resimhandler img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 60%;
+    height: 100%;
+}
+
+
+
+#works #reponse {
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    width: 65%;
+    height: 200px;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: background 0.1s ease-out;
+}
+
+#works #reponse:hover {
+    background-color: #1d1c1c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+#works #reponse #name {
+    position: absolute;
+    left: 27%;
+    top: 15%;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#works #reponse #rutbe {
+    position: absolute;
+    left: 27%;
+    top: 35%;
+    color: rgb(199, 193, 193);
+    font-size: 1.1rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#works #reponse #desc {
+    position: absolute;
+    left: 27%;
+    top: 50%;
+    color: rgb(199, 193, 193);
+    font-size: 1.1rem;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#works #reponse #resimhandler {
+    position: absolute;
+    left: 2%;
+    width: 200px;
+    height: 120px;
+    top: 22%;
+    background-color: rgb(21, 20, 20);
+    border-radius: 5px;
+}
+
+#works #reponse #resimhandler img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 60%;
+    height: 100%;
+}
+
+#altbar {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background-color: rgb(43, 42, 42);
+}
+
+/*#altbar p {
+    color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    position: absolute;
+    left: 10%;
+}*/
+
+#altbar p {
+    color: grey;
+    text-align: center;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#altbar #desc a:link {
+    text-decoration: none;
+}
+
+#altbar #desc a:link {
+    color: white;
+}
